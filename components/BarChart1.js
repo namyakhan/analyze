@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Bar } from "react-chartjs-2";
 import {
   Chart as ChartJS,
@@ -9,7 +8,6 @@ import {
   Tooltip,
   Legend,
 } from "chart.js";
-//       import faker from 'faker';
 
 ChartJS.register(
   CategoryScale,
@@ -21,9 +19,9 @@ ChartJS.register(
 );
 
 const BarChart1 = () => {
-  const [data, setData] = useState({
+  const data = {
     labels: [
-       "Jan",
+      "Jan",
       "Feb",
       "Mar",
       "Apr",
@@ -47,7 +45,7 @@ const BarChart1 = () => {
     ],
     borderColor: ["#44195E", "#E44B31"],
     borderWidth: 1,
-  });
+  };
   return (
     <div className="bg-white md:w-[340px] rounded-md drop-shadow-sm hover:drop-shadow-lg flex flex-col items-start p-3 md:p-4 ">
       <h2>Balance</h2>

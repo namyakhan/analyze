@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Bar } from "react-chartjs-2";
 import {
   Chart as ChartJS,
@@ -20,7 +19,7 @@ ChartJS.register(
 );
 
 const BarChart2 = () => {
-  const [data, setData] = useState({
+  const data = {
     labels: [
       "Jan",
       "Feb",
@@ -46,7 +45,7 @@ const BarChart2 = () => {
     ],
     borderColor: ["#44195E", "#E44B31"],
     borderWidth: 1,
-  });
+  };
   return (
     <div className="bg-white md:w-[340px]  rounded-md drop-shadow-sm hover:drop-shadow-lg flex flex-col items-start p-3 md:p-4 ">
       <h2>Expenses</h2>

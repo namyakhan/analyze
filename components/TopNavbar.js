@@ -27,15 +27,15 @@ const TopNavbar = () => {
               <a></a>
             </Link>
           </li>
-          <li className={router.pathname == "/messages" ? "active" : ""}>
+          <li>
             <InboxIcon className="h-5" />
-            <Link href="/messages">
+            <Link href="/">
               <a></a>
             </Link>
           </li>
-          <li className={router.pathname == "/alerts" ? "active" : ""}>
+          <li>
             <BellAlertIcon className="h-5" />
-            <Link href="/alerts">
+            <Link href="/">
               <a></a>
             </Link>
           </li>
