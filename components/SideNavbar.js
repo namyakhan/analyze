@@ -11,8 +11,8 @@ import {
 const SideNavbar = () => {
   const router = useRouter();
   return (
-    <div class=" flex flex-row ">
-      <div class=" py-10 px-8 bg-purple w-64 h-screen  relative hidden lg:block">
+    <div className=" flex flex-row ">
+      <div className=" py-10 px-8 bg-purple w-64 h-screen  relative hidden lg:block">
         {/* Logo */}
         <div className="flex flex-row items-center space-x-2">
           <img
