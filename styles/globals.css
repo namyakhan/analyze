@@ -1,26 +1,38 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Rochester&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.active {
+  color: white;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+@layer base {
   body {
-    color: white;
-    background: black;
+    @apply bg-[#EFEEF1] text-white font-poppins  overflow-hidden ;
+  }
+
+  li {
+    @apply flex flex-row items-center space-x-2 text-[20px] active:text-white hover:text-gray-300 cursor-pointer;
+  }
+
+  h1 {
+    @apply font-bold text-[30px];
+  }
+  h2 {
+    @apply text-purple font-semibold text-[14px] md:text-[24px];
+  }
+
+  h3 {
+    @apply text-gray-500  text-[12px] md:text-[15px];
+  }
+
+  h6 {
+    @apply text-grey text-[10px];
+  }
+
+  button {
+    @apply text-purple hover:text-white hover:bg-purple text-[12px] md:text-[15px]  border border-purple px-6 md:px-8 py-1 rounded-md cursor-pointer;
   }
 }
