@@ -14,10 +14,10 @@ const bar = () => {
         <div className="w-screen ">
           <Hero />
           <div className=" flex flex-col items-center space-y-5 container mx-auto p-5 md:px-10 md:py-10">
-            <BarChart3 />
+            {/* <BarChart3 /> */}
             <div className="flex flex-col items-center md:flex md:flex-row md:items-center md:justify-evenly space-y-5 md:space-y-0 md:space-x-16">
-              <BarChart1 />
-              <BarChart2 />
+              {/* <BarChart1 /> */}
+              {/* <BarChart2 /> */}
             </div>
           </div>
         </div>
