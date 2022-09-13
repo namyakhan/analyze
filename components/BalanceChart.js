@@ -41,10 +41,10 @@ const BalanceChart = () => {
       {
         label: "Yearly Balance",
         data: [10, 20, 30, 42, 51, 82, 31, 59, 61, 73, 91, 58],
-        borderColor: "#44195E",
+        borderColor: 'rgb(65, 25, 94)',
         tension: 0.4,
-        pointBorderColor: " #E44B31",
-        pointBackgroundColor: "#E44B31",
+        pointBorderColor: 'rgb(65, 25, 94)',
+        pointBackgroundColor: 'rgb(65, 25, 94)',
         showLine: true,
       },
     ],
